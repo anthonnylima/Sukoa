@@ -15,4 +15,9 @@ public class HealthController {
                 "mensagem", "Api de score no ar"
         );
     }
+
+    @GetMapping("/ola")
+    public Map<String, String> ola(){
+        return Map.of("Mensagem", "Olá, Mundo");
+    }
 }
